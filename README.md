@@ -47,7 +47,7 @@ path = /usr/bin/procmail
 ca_certs参数用来配置imap服务器的证书路径。ubuntu系统的CA证书通常保存在`/etc/ssl/certs/`目录下，可以通过下述命令来判断服务器使用哪个Root证书，然后在证书目录中找到相应证书
 
 ```
-openssl s_client -showcerts -connect imap.softbank.jp:993 < /dev/null 2>/dev/null | grep '^ *i:' | tail -n 1 
+openssl s_client -showcerts -connect imap.mail.com:993 < /dev/null 2>/dev/null | grep '^ *i:' | tail -n 1 
 ```
 
 ### msmtp
